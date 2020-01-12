@@ -1,0 +1,349 @@
+body {
+  background-image: url("../img/DashBoard/11803.jpg");
+  background-size: 100%;
+}
+.additionally_information_text {
+  font-size: 15px;
+  color: gray;
+  position: relative;
+  margin-bottom: 0px;
+}
+.additionally_information_text a {
+  color: #19a68c;
+}
+
+.smallImageDiv {
+  align-items: center;
+  min-width: 115px;
+  /* max-width: 135px; */
+  height: auto;
+  padding: 8px;
+  border-radius: 5%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.smallImageDiv p {
+  font-size: 15px;
+  color: black;
+  position: relative;
+  margin-bottom: 0px;
+}
+.smallImage {
+  display: inline-block;
+  height: 90px;
+  width: auto;
+  border-radius: 50%;
+}
+.additionally_information {
+  margin-left: 30px;
+
+  display: inline-block;
+}
+.name {
+  font-size: 40px;
+  color: black;
+}
+.information_block {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 5%;
+  padding: 5px;
+  background-color: white;
+}
+.information_blockAdd {
+  text-align: center;
+  border-radius: 10%;
+  display: inline-block;
+  margin: 0 auto;
+  width: 90%;
+
+  margin-top: 20px;
+  margin-left: 5%;
+  padding: 10px;
+  background-color: white;
+}
+
+.smallImageDiv:hover {
+  background-color: gray;
+}
+.image {
+  vertical-align: top;
+  width: auto;
+  max-height: 370px;
+}
+.navbar-primary {
+  background-color: #333;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  width: 200px;
+  z-index: 8;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  height: 100%;
+}
+
+.navbar-primary.collapsed {
+  width: 60px;
+}
+
+.navbar-primary.collapsed .glyphicon {
+  font-size: 22px;
+}
+
+.navbar-primary.collapsed .nav-label {
+  display: none;
+}
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-primary-menu li a {
+  display: block;
+  padding: 10px 18px;
+  text-align: left;
+  border-bottom: solid 1px #444;
+  color: #ccc;
+}
+
+.navbar-primary-menu li a:hover {
+  background-color: gray;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-primary-menu li a .glyphicon {
+  margin-right: 6px;
+}
+
+.navbar-primary-menu li a:hover .glyphicon {
+  color: orchid;
+}
+
+.main-content {
+  align-items: center;
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.collapsed + .main-content {
+  margin-left: 60px;
+}
+.icon {
+  height: 80px;
+  width: auto;
+}
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 450px;
+  caret-color: red;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: white;
+  color: #e74c3c;
+}
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+h1 {
+  width: auto;
+  font-size: 70px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(245, 8, 8);
+  text-align: center;
+}
+table {
+  height: 100%;
+  margin-top: 15px;
+  align-items: center;
+  width: 100%;
+  color: black;
+  background-color: #fff;
+
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+tr {
+  min-height: 45px;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+tr:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+.load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+}
+
+.load :first-child {
+  background: #19a68c;
+  animation-delay: -1.5s;
+}
+.load :nth-child(2) {
+  background: #f63d3a;
+  animation-delay: -1s;
+}
+.load :nth-child(3) {
+  background: #fda543;
+  animation-delay: -0.5s;
+}
+.load :last-child {
+  background: #193b48;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(160%);
+  }
+  50% {
+    transform: translate(160%, 160%);
+  }
+  75% {
+    transform: translate(0, 160%);
+  }
+}
+
+.pagination,
+.pagination li a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pagination {
+  margin-top: 20px;
+}
+.pagination li {
+  background-color: lightseagreen;
+}
+
+.pagination a {
+  font-weight: 300;
+  padding-top: 1px;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-left-width: 0;
+  min-width: 44px;
+  min-height: 44px;
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
+}
+
+.pagination li:not([class*="current"]) a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(0, 0, 0, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.pagination li:not([class*="current"]) a:focus,
+.pagination li:not([class*="current"]) a:active {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+  border-left-width: 1px;
+}
+
+.pagination li:first-of-type a {
+  border-left-width: 1px;
+}
+
+.pagination li:first-of-type span,
+.pagination li:last-of-type span,
+.pagination li:nth-of-type(2) span,
+.pagination li:nth-last-of-type(2) span {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.pagination li:first-child a::before,
+.pagination li:last-child a::after,
+.pagination li:nth-of-type(2) a::before,
+.pagination li:nth-last-of-type(2) a::after {
+  display: inline-block;
+  font-family: Fontawesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.pagination li:last-child a::after,
+.pagination li:nth-last-of-type(2) a::after {
+  transform: rotate(180deg);
+}
+
+.pagination li.current a {
+  padding-top: 0.25em;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+  cursor: default;
+  pointer-events: none;
+}
